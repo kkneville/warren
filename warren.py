@@ -20,10 +20,22 @@ class Warren(object):
 			count += 1
 		return count
 	
-	def log(self, type, num=0, name1="", name2="")
+	def log(self, type, num=0, name1="", name2=""):
 		if type = "birth":
 			log.push("{} kits were born to {} and {}".format(num, name1, name2))
 
+
+# name generator			
+
+
+class Rabbit(object):
+	def __init__(self, mother, father):
+		self.name = "none"
+		self.age = "kit"
+		self.markings = "none"
+
+	def nameGen(self):
+		suffix = ["heart", "tail", "ear", "foot", "paw", "run", "star", "tree", "bloom", "meadow", "ash"]
 
 	
 
