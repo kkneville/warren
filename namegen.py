@@ -1,28 +1,36 @@
 import random
 
 
-def newName():
+def newName(num):
 	letters = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 	
 	vowels = ["a", "ai", "aa", "au", "ay", "e", "ee", "ei", "eo", "ey", "i", "ie", "ia", "o", "oo", "oa", "oy", "u", "ui", "ue", "y", "ya", "ye", "yi", "yue", "yau"]
 	
 	consonants = ["b", "br", "bl", "c", "cr", "d", "dr", "dl", "dt", "f", "fl", "fr", "g", "gh", "h", "hs", "j", "jh", "jhr", "k", "kl", "kr", "kh", "khr", "khl", "kt", "l", "ll", "m", "mm", "n", "mn", "mh", "p", "ph", "pl", "pr", "py", "q", "qh", "r", "rr", "s", "sl", "sk", "ss", "t", "tt", "tr", "tl", "v", "vr", "vl", "w", "wh", "x", "xh", "y", "z", "zr", "zl", "zh"]
 
+	names = []
 	name = ""
-	letter_type = ""
-	length = random.randint(3, 6)
+	letter_type = -1
+	length = random.randint(3, 5)
 
-	for each in length:
-		if name.length < 1:
-			letter_type = random.choice("vowel", "consonant")
+	for one in range(0, num):
+		for each in range(0, length):
+			if len(name) < 1:
+				letter_type = random.randint(0,2)
+				
+			if letter_type == 0:
+				name += vowels[random.randint(0, len(vowels)-1)]
+				letter_type = 1
+				continue 
+				
+			elif letter_type == 1:
+				name += consonants[random.randint(0, len(consonants)-1)]
+				letter_type = 0
+
+		names.append(name)
+		name = ""
+	return names	
 			
-		if letter_type == "vowel":
-			name.append(vowels[random.randint(0, vowels.length)])
-			letter_type = "consonant"
-		else :
-			name.append(consonants[random.randint(0, consonants.length)])
-			letter_type = "vowel"
 
-		return name
-
-		
+test = newName(5)
+print (test)
