@@ -35,8 +35,8 @@ class Rabbit(object):
 		self.markings = "none"
 
 	def nameGen(self):
-		suffix = ["heart", "tail", "ear", "foot", "paw", "run", "star", "tree", "bloom", "meadow", "ash"]
-
+		suffix = ["heart", "tail", "ear", "foot", "paw", "run", "star", "tree", "bloom", "meadow", "thorn", "berry"]
+		prefix = ["bramble", "holly", "rose", "elm", "ash","hazel", "merry", "mouse", "flora", "birch", "sorrel", "water", "rain", "winter", "snow", "sun", "mountain", "valley"]
 	
 
 
