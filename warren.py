@@ -37,6 +37,6 @@ class Rabbit(object):
 	def nameGen(self):
 		suffix = ["heart", "tail", "ear", "foot", "paw", "run", "star", "tree", "bloom", "meadow", "thorn", "berry"]
 		prefix = ["bramble", "holly", "rose", "elm", "ash","hazel", "merry", "mouse", "flora", "birch", "sorrel", "water", "rain", "winter", "snow", "sun", "mountain", "valley"]
-	
+		name = "{} {}".format(prefix[random.randint(0, len(suffix))], suffix[random.randint(0, len(suffix))] )
 
 
