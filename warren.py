@@ -11,6 +11,9 @@ class Warren(object):
 		self.owsla = []
 		self.rabbits = []
 		self.log = []
+		self.hunger = 10
+		self.health = 10
+		self.state = "rest"
 
 	def count(self):
 		count = 0
@@ -40,3 +43,19 @@ class Rabbit(object):
 		name = "{} {}".format(prefix[random.randint(0, len(suffix))], suffix[random.randint(0, len(suffix))] )
 
 
+	def eat(self, num):
+		self.hunger += 1*num
+		return self
+
+	def graze(self):
+		if self.hunger == 10
+			return self
+		self.hunger += 1
+			return self		
+
+	def sleep(self):
+		self.state = "sleep"
+		return self
+
+
+			
