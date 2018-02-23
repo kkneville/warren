@@ -57,5 +57,11 @@ class Rabbit(object):
 		self.state = "sleep"
 		return self
 
-
+	def defend(self, foe):
+		self.hunger -= foe.strength
+		return self
+	
+	def sustain_injury(self, foe):
+		self.health -= foe.strength
+		return self
 			
