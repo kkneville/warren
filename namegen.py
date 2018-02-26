@@ -11,7 +11,7 @@ def newName(num):
 	names = []
 	name = ""
 	letter_type = -1
-	length = random.randint(3, 5)
+	length = random.randint(3, 7)
 
 	for one in range(0, num):
 		for each in range(0, length):
