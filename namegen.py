@@ -34,3 +34,8 @@ def newName(num):
 
 test = newName(5)
 print (test)
+
+
+def vikingName(num):
+	pref = ["Snor", "Skar", "Mar", "Jarl", "Grim", "Grip", "Kam", "Krak", "Krav", "Marl", "Agon", "Arnar", "Ibar", "Jung"]
+		
